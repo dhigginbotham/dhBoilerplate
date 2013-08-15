@@ -1,0 +1,34 @@
+{
+  "name": "dhBoilerplate",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "David Higginbotham",
+    "email": "davehigginbotham@gmail.com"
+  },
+  "dependencies": {
+    "express": "~3.3.4",
+    "request": "~2.25.0",
+    "mongoose": "~3.6.15",
+    "paginate": "~0.1.1",
+    "lodash": "~1.3.1",
+    "express-fbauth": "0.0.3",
+    "assets-middleware": "git+https://github.com/dhigginbotham/assets-middleware",
+    "forms-middleware": "git+https://github.com/dhigginbotham/forms-middleware",
+    "simple-conf": "git+https://github.com/dhigginbotham/simple-conf",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "jade": "~0.34.1",
+    "hoek": "~0.9.1",
+    "express-restify-mongoose": "~0.2.0",
+    "bcrypt": "~0.7.6",
+    "moment": "~2.1.0",
+    "session-mongoose": "~0.2.3",
+    "speakingurl": "~0.2.20",
+    "jade-engineer": "git+https://github.com/dhigginbotham/jade-engineer",
+    "express-form": "~0.8.1",
+    "async": "~0.2.9"
+  },
+  "devDependencies": {},
+  "bugs": "http://github.com/dhgginbotham/dhBoilerplate"
+}

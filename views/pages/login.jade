@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  .row
+    .col-lg-4
+    .col-lg-4.panel.panel-primary
+      if (flash)
+        .alert.alert-danger
+          h3 Heads up!
+          p #{flash}
+      if (loginForm) 
+        != loginForm
+    .col-lg-4

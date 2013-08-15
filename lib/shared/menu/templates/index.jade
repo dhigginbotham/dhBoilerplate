@@ -1,0 +1,27 @@
+include mixins
+
+ul.nav.navbar-nav
+  if (menus)
+    each menu, index in menus
+      if (menu.active)
+
+        li.active
+          if (menu.title && !menu.icon)
+            +href(menu)
+          if (menu.icon && !menu.title)
+            +icon(menu)
+
+      else if (menu.children)
+
+        li.dropdown
+          if (menu.title && !menu.icon)
+            +href(menu)
+          if (menu.icon && !menu.title)
+            +icon(menu)
+      else
+        
+        li
+          if (menu.title && !menu.icon)
+            +href(menu)
+          if (menu.icon && !menu.title)
+            +icon(menu)

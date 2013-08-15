@@ -1,0 +1,31 @@
+mixin href(menu)
+  if (menu.children)
+    a(href=menu.href, data-toggle="dropdown", class="dropdown-toggle") #{menu.title} 
+      b.caret
+    +children(menu.children)
+  else
+    a(href=menu.href) #{menu.title}
+
+mixin icon(menu)
+  if (menu.children)
+    a(href=menu.href, data-toggle="dropdown", class="dropdown-toggle")
+      i(class="icon-#{menu.icon}") 
+      |  #{menu.title}
+      b.caret
+    +children(menu.children)
+  else
+    a(href=menu.href)
+      i(class="icon-#{menu.icon}") 
+      |  #{menu.title}
+
+mixin children(menu)
+  ul.dropdown-menu
+    for child, index in menu
+      li 
+        if (child.icon)
+          +icon(child)
+        else
+          +href(child)
+
+      if (index + 1 < menu.length)
+        li.divider

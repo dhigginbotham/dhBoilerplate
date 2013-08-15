@@ -1,0 +1,5 @@
+if (assets)
+  each asset in assets.foot.css
+    link(href=asset.src, rel="stylesheet")
+  each asset in assets.foot.js
+    script(type="text/javascript", src=asset.src)

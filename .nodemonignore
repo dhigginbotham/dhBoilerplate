@@ -1,0 +1,7 @@
+public/
+app/views/*
+.git/*
+.git*
+lib/views/*
+*.jade
+*.mmm

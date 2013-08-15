@@ -1,0 +1,19 @@
+!!! 5
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(name="viewport", content="width=device-width")
+    block header
+      include includes/assets-header
+
+  body
+    include includes/menu
+    .container
+      block content
+
+      //- start layout footer
+      footer.clearfix
+
+    block footer
+      include includes/assets-footer
