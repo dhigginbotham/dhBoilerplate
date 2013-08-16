@@ -1,6 +1,8 @@
 ## dhBoilerplate 
 I was tired of just copy and pasting out certain bits of apps I use for just about any and all Express apps.
 
+I wouldn't recommend using this unless you have a good unstanding for it. I'll get to docs soon :)
+
 ### What it's got?
 - Coffee-script 100%, submodules are usually compiled to js, but the core of the app is Coffee
 - Passport (Local Strategy) w/ Mongoose
